@@ -7,26 +7,55 @@ import './util'
 import './App.css'
 
 const CubeLoader = ({ setLoadingComplete }) => {
-  const { progress } = useProgress()
+  const { progress } = useProgress();
 
   useEffect(() => {
     if (progress === 100) {
-      setLoadingComplete(true)
+      setLoadingComplete(true);
     }
-  }, [progress, setLoadingComplete])
+  }, [progress, setLoadingComplete]);
+
+  const radius = 40;
+  const circumference = 2 * Math.PI * radius;
+  const progressOffset = circumference - (progress / 100) * circumference;
 
   return (
     <Html fullscreen>
       <div className="loader-container">
         <div className="loader-content">
-          <div className="loader-progress" style={{ width: `${progress}%` }}></div>
+          <svg className="progress-ring" width="100" height="100">
+            <circle
+              className="progress-ring__circle"
+              stroke="#007BFF"
+              strokeWidth="4"
+              fill="transparent"
+              r={radius}
+              cx="50"
+              cy="50"
+            />
+            <circle
+              className="progress-ring__circle-progress"
+              stroke="#007BFF"
+              strokeWidth="4"
+              strokeLinecap="round"
+              fill="transparent"
+              r={radius}
+              cx="50"
+              cy="50"
+              style={{
+                strokeDasharray: `${circumference} ${circumference}`,
+                strokeDashoffset: progressOffset,
+              }}
+            />
+            <line x1="50" y1="50" x2="50" y2="20" stroke="#007BFF" strokeWidth="2" />
+          </svg>
           <p className="loader-text">The entirety of time is loading...</p>
           <p className="loader-time">IS TIME</p>
         </div>
       </div>
     </Html>
-  )
-}
+  );
+};
 
 export const App = () => {
   const [fov, setFov] = useState(15)
@@ -69,7 +98,7 @@ export const App = () => {
 
       {loadingComplete && (
         <button onClick={toggleFov} className="toggle-button press-start-2p-regular">
-          Click me!
+          To the Moon!
         </button>
       )}
     </div>

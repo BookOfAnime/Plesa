@@ -108,7 +108,7 @@ function Root() {
         </a>
         <div style={styles.telegram}>
           <a className='press-start-2p-regular' href='https://t.me/SnapshotsInTimePortal' style={{ color: 'white' }}>
-            <img src='./pump.png' alt="Telegram" style={commonImageStyle} />
+            <img src='./Telegram.png' alt="Telegram" style={commonImageStyle} />
           </a>
         </div>
         <a className='tit press-start-2p-regular' style={styles.title} href="#">
