@@ -89,7 +89,9 @@ export const App = () => {
           <Environment files="./assets/sky.exr" background />
           {showScrollText && (
             <Html>
+              <div className='scroll-instruction-container'>
               <div className="scroll-instruction">Scroll to explore</div>
+              </div>
             </Html>
           )}
         </Suspense>
@@ -97,7 +99,7 @@ export const App = () => {
 
       {loadingComplete && (
         <button onClick={toggleFov} className="toggle-button moon">
-          To the Moon!
+          Explore the Void!
         </button>
       )}
     </div>
