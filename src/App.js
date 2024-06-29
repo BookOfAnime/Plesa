@@ -96,7 +96,7 @@ export const App = () => {
       </Canvas>
 
       {loadingComplete && (
-        <button onClick={toggleFov} className="toggle-button press-start-2p-regular">
+        <button onClick={toggleFov} className="toggle-button moon">
           To the Moon!
         </button>
       )}

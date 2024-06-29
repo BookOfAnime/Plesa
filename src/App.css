@@ -125,6 +125,11 @@ body {
   50% { transform: translateX(-50%) scale(1.05); }
 }
 
+.moon {
+  font-family: 'CustomFont', Arial, sans-serif;
+
+}
+
 .toggle-button {
   position: absolute;
   z-index: 1;
