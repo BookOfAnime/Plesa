@@ -112,15 +112,21 @@ function Root() {
       <div className="press-start-2p-regular" style={styles.container}>
         <a className="press-start-2p-regular pumpFun" href="https://pump.fun/" style={styles.pumpFun}>
           <div style={iconContainerStyle}>
-            <img className="icon-image" src="./pump.png" alt="PUMP.FUN" style={commonImageStyle} />
+    <a href="https://pump.fun/V7hNqStNAGWeEvieq3ChPt4pfqf5HMd3o2bPxeDpump">
+            <img className="icon-image" src="./pump.png" alt="PUMP.FUN" style={commonImageStyle} /></a>
+    
             <img className="icon-image" src="./tools.png" alt="Tools" style={commonImageStyle} />
-            <img className="icon-image" src="./file.png" alt="File" style={commonImageStyle} />
+    <a href="https://x.com/SnapshotsSolana">
+            <img className="icon-image" src="./x.png" alt="File" style={commonImageStyle} />
+    </a>
           </div>
         </a>
         <div style={styles.telegram}>
           <a className="press-start-2p-regular" href="https://t.me/SnapshotsInTimePortal" style={{ color: 'white' }}>
             <div style={iconContainerStyle}>
-              <img className="icon-image" src="./Telegram.png" alt="Telegram" style={commonImageStyle} />
+              <a href="https://t.me/SnapshotsInTimePortal">
+              <img className="icon-image" src="./Telegram.png" alt="Telegram" style={commonImageStyle} /></a>
+  
               <img className="icon-image" src="./dex.png" alt="DEX" style={commonImageStyle} />
               <img className="icon-image" src="./jup.png" alt="DEX" style={commonImageStyle} />
 
