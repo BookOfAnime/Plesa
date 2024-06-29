@@ -12,7 +12,7 @@ function Root() {
     color: 'white',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
+    alignItems: 'center'
   }
 
   const commonImageStyle = {
@@ -20,7 +20,7 @@ function Root() {
     height: 'auto',
     maxWidth: '100px',
     objectFit: 'contain',
-    margin: '10px 0',
+    margin: '10px 0'
   }
 
   const desktopStyles = {
@@ -30,21 +30,21 @@ function Root() {
       left: 0,
       width: '100vw',
       height: '100vh',
-      pointerEvents: 'none',
+      pointerEvents: 'none'
     },
     pumpFun: {
       ...commonLinkStyle,
       bottom: 100,
       left: 20,
       textAlign: 'center',
-      fontSize: "2rem"
+      fontSize: '2rem'
     },
     telegram: {
       ...commonLinkStyle,
       bottom: 100,
       right: 20,
       fontSize: '2.1rem',
-      textAlign: 'center',
+      textAlign: 'center'
     },
     title: {
       width: '100%',
@@ -56,7 +56,7 @@ function Root() {
       margin: '0 auto',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
+      alignItems: 'center'
     }
   }
 
@@ -67,21 +67,21 @@ function Root() {
       left: 0,
       width: '100vw',
       height: '100vh',
-      pointerEvents: 'none',
+      pointerEvents: 'none'
     },
     pumpFun: {
       ...commonLinkStyle,
       bottom: 60,
       left: 10,
       fontSize: '0.8rem',
-      textAlign: 'center',
+      textAlign: 'center'
     },
     telegram: {
       ...commonLinkStyle,
       bottom: 60,
       right: 10,
       fontSize: '0.8rem',
-      textAlign: 'center',
+      textAlign: 'center'
     },
     title: {
       width: '100%',
@@ -93,7 +93,7 @@ function Root() {
       margin: '0 auto',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
+      alignItems: 'center'
     }
   }
 
@@ -102,16 +102,16 @@ function Root() {
   return (
     <>
       <App />
-      <div className='press-start-2p-regular' style={styles.container}>
-        <a className='press-start-2p-regular pumpFun' href="https://pump.fun/" style={styles.pumpFun}>
-          <img src='./pump.png' alt="PUMP.FUN" style={commonImageStyle} />
+      <div className="press-start-2p-regular" style={styles.container}>
+        <a className="press-start-2p-regular pumpFun" href="https://pump.fun/" style={styles.pumpFun}>
+          <img className="icon-image" src="./pump.png" alt="PUMP.FUN" style={commonImageStyle} />
         </a>
         <div style={styles.telegram}>
-          <a className='press-start-2p-regular' href='https://t.me/SnapshotsInTimePortal' style={{ color: 'white' }}>
-            <img src='./Telegram.png' alt="Telegram" style={commonImageStyle} />
+          <a className="press-start-2p-regular" href="https://t.me/SnapshotsInTimePortal" style={{ color: 'white' }}>
+            <img className="icon-image" src="./Telegram.png" alt="Telegram" style={commonImageStyle} />
           </a>
         </div>
-        <a className='tit press-start-2p-regular' style={styles.title} href="#">
+        <a className=" snapshots-title " style={styles.title} href="#">
           Snapshots in Time
         </a>
       </div>

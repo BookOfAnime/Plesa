@@ -1,8 +1,12 @@
-@import url('https://rsms.me/inter/inter.css');
 
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/public/sde.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif; /* Apply the custom font to all elements */
   margin: 0;
   padding: 0;
 }
@@ -47,6 +51,53 @@ canvas {
 /* Loading Screen Styles */
 
 
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This assumes you want it centered vertically in the viewport */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+.snapshots-title {
+  font-family: 'CustomFont', Arial, sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 20px 10px;
+  text-shadow: 
+    0 0 5px rgba(255,255,255,0.5),
+    0 0 10px rgba(255,255,255,0.3),
+    0 0 15px rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.snapshots-title:hover {
+  text-shadow: 
+    0 0 8px rgba(255,255,255,0.6),
+    0 0 15px rgba(255,255,255,0.4),
+    0 0 20px rgba(255,255,255,0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .snapshots-title {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .snapshots-title {
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    letter-spacing: 1px;
+  }
+}
 .enterButton {
   padding: 10px 20px;
   font-size: 16px;
