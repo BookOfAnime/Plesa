@@ -79,7 +79,7 @@ export const App = () => {
       <Canvas camera={{ position: [0, 0, 100], fov }}>
         <Suspense fallback={<CubeLoader setLoadingComplete={setLoadingComplete} />}>
           <ScrollControls pages={4} infinite>
-            <ambientLight intensity={2} />
+            <ambientLight intensity={4} />
             <Rig rotation={[0, 0, 0.15]} fov={fov}>
               <Carousel  />
             </Rig>
