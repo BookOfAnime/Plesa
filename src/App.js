@@ -50,7 +50,6 @@ const CubeLoader = ({ setLoadingComplete }) => {
             <line x1="50" y1="50" x2="50" y2="20" stroke="#007BFF" strokeWidth="2" />
           </svg>
           <p className="loader-text">The entirety of time is loading...</p>
-          <p className="loader-time">IS TIME</p>
         </div>
       </div>
     </Html>
