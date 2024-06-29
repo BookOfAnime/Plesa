@@ -99,7 +99,7 @@ export const App = () => {
 
       {loadingComplete && (
         <button onClick={toggleFov} className="toggle-button moon">
-          Explore the Void
+          See the Void
         </button>
       )}
     </div>
