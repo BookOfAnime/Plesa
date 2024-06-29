@@ -15,12 +15,19 @@ function Root() {
     alignItems: 'center'
   }
 
+  const iconContainerStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%',
+    maxWidth: '300px',
+    margin: '10px 0'
+  }
+
   const commonImageStyle = {
     width: '100%',
     height: 'auto',
-    maxWidth: '100px',
-    objectFit: 'contain',
-    margin: '10px 0'
+    maxWidth: '80px',
+    objectFit: 'contain'
   }
 
   const desktopStyles = {
@@ -104,14 +111,24 @@ function Root() {
       <App />
       <div className="press-start-2p-regular" style={styles.container}>
         <a className="press-start-2p-regular pumpFun" href="https://pump.fun/" style={styles.pumpFun}>
-          <img className="icon-image" src="./pump.png" alt="PUMP.FUN" style={commonImageStyle} />
+          <div style={iconContainerStyle}>
+            <img className="icon-image" src="./pump.png" alt="PUMP.FUN" style={commonImageStyle} />
+            <img className="icon-image" src="./tools.png" alt="Tools" style={commonImageStyle} />
+            <img className="icon-image" src="./file.png" alt="File" style={commonImageStyle} />
+          </div>
         </a>
         <div style={styles.telegram}>
           <a className="press-start-2p-regular" href="https://t.me/SnapshotsInTimePortal" style={{ color: 'white' }}>
-            <img className="icon-image" src="./Telegram.png" alt="Telegram" style={commonImageStyle} />
+            <div style={iconContainerStyle}>
+              <img className="icon-image" src="./Telegram.png" alt="Telegram" style={commonImageStyle} />
+              <img className="icon-image" src="./dex.png" alt="DEX" style={commonImageStyle} />
+              <img className="icon-image" src="./jup.png" alt="DEX" style={commonImageStyle} />
+
+            </div>
+
           </a>
         </div>
-        <a className=" snapshots-title " style={styles.title} href="#">
+        <a className="snapshots-title" style={styles.title} href="#">
           Snapshots in Time
         </a>
       </div>
