@@ -113,6 +113,7 @@ body {
   animation: fadeInOut 5s ease-in-out, pulse 2s infinite;
   text-align: center;
   white-space: nowrap;
+  scale:3;
 }
 
 @keyframes fadeInOut {
